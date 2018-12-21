@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/child_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/child_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/child_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="数据"
+            android:textSize="25sp"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:id="@+id/child_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="￥0.0"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#f00"
+            />
+
+    </LinearLayout>
+
+    <com.zjh.administrat.shoppcarexpandablelistview.view.AddSubView
+        android:id="@+id/add_remove_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
